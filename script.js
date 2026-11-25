@@ -252,7 +252,7 @@
         ? '<ul class="t-points">' + it.points.map(function (p) { return "<li>" + t(p) + "</li>"; }).join("") + '</ul><button type="button" class="t-toggle" aria-expanded="false">' + icon("plus") + "<span>More</span></button>"
         : "";
       return '<article class="t-item reveal" data-type="' + esc(it.type) + '"' + d(i) + '><span class="t-dot"></span><div class="t-card glass">' +
-        '<div class="t-meta"><span class="t-type">' + esc(labels[it.type] || it.type) + '</span><span class="t-period">' + t(it.period) + "</span></div>" +
+        '<div class="t-meta"><span class="t-type">' + esc(labels[it.type] || it.type) + '</span>' + (it.period ? '<span class="t-period">' + t(it.period) + "</span>" : "") + "</div>" +
         "<h3>" + t(it.title) + "</h3>" + (it.org ? '<p class="t-org">' + t(it.org) + "</p>" : "") +
         "<p>" + t(it.text) + "</p>" + pts + "</div></article>";
     }).join("");
@@ -290,6 +290,7 @@
     var cards = (S.skills || []).map(function (s, i) {
       var lv = Math.max(0, Math.min(100, Number(s.level) || 0));
       return '<article class="skill glass reveal"' + d(i) + '><div class="skill__icon">' + icon(s.icon) + "</div><h3>" + t(s.name) + "</h3><p>" + t(s.text) + "</p>" +
+        ((s.tags || []).length ? '<ul class="tags">' + s.tags.map(function (x) { return "<li>" + t(x) + "</li>"; }).join("") + "</ul>" : "") +
         (showLv ? '<div class="bar" role="img" aria-label="' + lv + ' percent"><span style="--w:' + lv + '%"></span></div>' : "") + "</article>";
     }).join("");
     $("#skills .container").innerHTML = head("skills") + '<div class="skills">' + cards + "</div>";
@@ -428,6 +429,29 @@
       '<p class="footer__tag">' + t(F.tagline || b.tagline) + '</p></div><div class="footer__social">' + socials + "</div></div>" +
       '<div class="footer__bottom"><span>© <span id="year">' + new Date().getFullYear() + "</span> " + esc(b.name) + ". " + t(F.note || "") + "</span>" +
       '<a href="#home">Back to top ↑</a></div>';
+  }
+
+  // Hide sections that have no content yet, and keep the background stripes alternating
+  function tidySections() {
+    var A = S.achievements || {};
+    var empty = {
+      projects: !((S.projects || {}).items || []).length,
+      gallery: !(S.gallery || []).length,
+      achievements: !((A.groups || []).some(function (g) { return (g.items || []).length; }) || (A.stats || []).length),
+      skills: !(S.skills || []).length,
+      journey: !((S.journey || {}).items || []).length
+    };
+    Object.keys(empty).forEach(function (id) {
+      if (!empty[id]) return;
+      var sec = document.getElementById(id); if (sec) sec.hidden = true;
+      var a = $('#navLinks a[href="#' + id + '"]'); if (a) a.hidden = true;
+    });
+    var n = 0;
+    $$("main > section.section").forEach(function (sec) {
+      if (sec.hidden) return;
+      sec.classList.toggle("section--alt", n % 2 === 1); n++;
+    });
+    if (empty.projects) $("#btnWork").setAttribute("href", "#skills");
   }
 
   /* =====================================================================
@@ -592,7 +616,7 @@
      START
      ===================================================================== */
   [setupGlobalHandlers, renderMeta, renderHero, renderAbout, renderJourney, renderSkills, renderProjects, renderGallery,
-   renderAchievements, renderInterests, renderContact, renderFooter, setupTheme, setupNav, setupLightbox]
+   renderAchievements, renderInterests, renderContact, renderFooter, tidySections, setupTheme, setupNav, setupLightbox]
     .forEach(function (fn) {
       try { fn(); } catch (err) { if (window.console) console.error("Problem in " + fn.name + ":", err); }
     });
