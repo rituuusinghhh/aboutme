@@ -259,7 +259,8 @@ window.SITE = {
     },
     email: "ritusingh8aug@gmail.com",
     links: [
-      { name: "Instagram", icon: "instagram", url: "https://www.instagram.com/rituraj._.singhhh/", handle: "@rituraj._.singhhh" }
+      { name: "Instagram", icon: "instagram", url: "https://www.instagram.com/rituraj._.singhhh/", handle: "@rituraj._.singhhh" },
+      { name: "Snapchat",  icon: "snapchat",  url: "https://www.snapchat.com/add/rituuuwithcam", handle: "rituuuwithcam" }
       // Add more like this (don't forget the comma on the line above):
       // { name: "LinkedIn", icon: "linkedin", url: "https://linkedin.com/in/YOUR_USERNAME", handle: "Rituraj Singh" }
     ]
