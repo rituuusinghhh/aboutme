@@ -59,7 +59,7 @@ window.SITE = {
     },
     // PROFILE PHOTO: upload a photo named  profile.jpg  into assets/images/  and it appears automatically.
     // (Using a different file name or type, e.g. .png / .webp? Change the name here.)
-    photo: "assets/images/profile.jpg",
+    photo: "assets/images/profile.jpg.jpeg",
     // Small floating cards next to your photo (max 3). Icons: pen-tool, video, book-open, briefcase, camera, layers, star, award, zap, users
     heroChips: [
       { icon: "cpu",       label: "Technology",       sub: "AI & digital tools" },
@@ -88,7 +88,7 @@ window.SITE = {
      ABOUT ME
      ------------------------------------------------------------------ */
   about: {
-    photo: "assets/images/about.jpg",   // leave empty to reuse your profile photo, or give another one, e.g. "assets/images/about.jpg"
+    photo: "assets/images/about.jpg.jpeg",   // leave empty to reuse your profile photo, or give another one, e.g. "assets/images/about.jpg"
     photoCaption: "Rituraj Singh",
     lead: "I'm Rituraj Singh, originally from Bihar and currently based in Surat, Gujarat.",
     paragraphs: [
@@ -201,13 +201,13 @@ window.SITE = {
      Tip: keep each photo under ~300 KB (see README → "Prepare your photos").
      ------------------------------------------------------------------ */
   gallery: [
-    { src: "assets/images/gallery/formal-look.jpg",     caption: "Formal look",       category: "Portraits" },
-    { src: "assets/images/gallery/golden-light.jpg",    caption: "Golden light",      category: "Portraits" },
-    { src: "assets/images/gallery/lake-walk.jpg",       caption: "By the lake",       category: "Moments" },
-    { src: "assets/images/gallery/night-sea.jpg",       caption: "Night by the sea",  category: "Moments" },
-    { src: "assets/images/gallery/festive-evening.jpg", caption: "Festive evening",   category: "Moments" },
-    { src: "assets/images/gallery/event-day.jpg",       caption: "Event day",         category: "Portraits" },
-    { src: "assets/images/gallery/sea-sunglasses.jpg",  caption: "Sea breeze",        category: "Moments" }
+    { src: "assets/images/gallery/formal-look.jpg.jpeg", caption: "Formal look",  category: "Portraits" },
+    { src: "assets/images/gallery/aesthetic.jpg.jpeg",   caption: "Aesthetic",    category: "Portraits" },
+    { src: "assets/images/gallery/front-face-jpg.jpeg",  caption: "Portrait",     category: "Portraits" },
+    { src: "assets/images/gallery/event-day.jpg.jpeg",   caption: "Event day",    category: "Portraits" },
+    { src: "assets/images/gallery/lake-view.jpg.jpeg",   caption: "Lake view",    category: "Moments" },
+    { src: "assets/images/gallery/juhu-beach.jpg.jpeg",  caption: "Juhu beach",   category: "Moments" },
+    { src: "assets/images/gallery/garba-event.jpg.jpeg", caption: "Garba event",  category: "Moments" }
   ],
 
   /* ------------------------------------------------------------------
