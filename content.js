@@ -118,52 +118,6 @@ window.SITE = {
      type must be one of:  education | experience | milestone | achievement
      "points" is optional: extra bullet points shown when the visitor taps "More".
      ------------------------------------------------------------------ */
-  journey: {
-    typeLabels: { education: "Education", experience: "Experience", milestone: "Milestone", achievement: "Achievement" },
-    items: [
-      {
-        type: "education",
-        period: "[EDIT: Year – Year]",
-        title: "[EDIT: Degree / Course / Class]",
-        org: "[EDIT: School / College / University]",
-        text: "[EDIT: one or two lines about what you studied or learned.]"
-      },
-      {
-        type: "education",
-        period: "[EDIT: Year]",
-        title: "[EDIT: Certification or training]",
-        org: "[EDIT: Institute / Platform]",
-        text: "[EDIT: what you learned or earned.]"
-      },
-      {
-        type: "experience",
-        period: "[EDIT: Year – Present]",
-        title: "[EDIT: Your role]",
-        org: "VIJAY SHREE POP & PVC",
-        text: "[EDIT: what you do here and what you have built or improved.]",
-        points: ["[EDIT: key responsibility or result]", "[EDIT: another responsibility or result]"]
-      },
-      {
-        type: "experience",
-        period: "[EDIT: Year – Present]",
-        title: "[EDIT: Your role]",
-        org: "A.S. Computer & Coaching Classes",
-        text: "[EDIT: what you teach or manage here, and what you are proud of.]",
-        points: ["[EDIT: subject or batch you handle]", "[EDIT: something your students achieved]"]
-      },
-      {
-        type: "milestone",
-        period: "[EDIT: Year]",
-        title: "[EDIT: An important milestone]",
-        org: "",
-        text: "[EDIT: why it mattered.]"
-      },
-      {
-        type: "achievement",
-        period: "[EDIT: Year]",
-        title: "[EDIT: An achievement or recognition]",
-        org: "",
-        text: "[EDIT: a short description. Only add real achievements.]"
       }
     ]
   },
@@ -221,23 +175,6 @@ window.SITE = {
      Each group is a card. Add / remove groups and items freely.
      icon options: award, check, briefcase, star, book-open, target
      ------------------------------------------------------------------ */
-  achievements: {
-    stats: [
-      // Optional big numbers. Example (remove the // to use):
-      // { value: "100+", label: "Completed projects" }
-    ],
-    groups: [
-      { icon: "award", title: "Professional Achievements", items: [
-        { title: "[EDIT: Achievement]", text: "[EDIT: short detail]", year: "[EDIT: Year]" }
-      ] },
-      { icon: "check", title: "Certifications", items: [
-        { title: "[EDIT: Certification name]", text: "[EDIT: issued by]", year: "[EDIT: Year]" }
-      ] },
-      { icon: "briefcase", title: "Completed Projects", items: [
-        { title: "[EDIT: Project name]", text: "[EDIT: short detail]", year: "[EDIT: Year]" }
-      ] },
-      { icon: "star", title: "Personal Milestones", items: [
-        { title: "[EDIT: Milestone]", text: "[EDIT: short detail]", year: "[EDIT: Year]" }
       ] }
     ]
   },
@@ -252,14 +189,6 @@ window.SITE = {
       { icon: "layers",    title: "Designing",           text: "Shaping layouts, brands and visuals with care for detail." },
       { icon: "camera",    title: "Photography",         text: "Capturing moments and framing the world creatively." },
       { icon: "book-open", title: "Learning & Teaching", text: "Learning something new every day and sharing it with others." }
-    ],
-    hobbiesTitle: "Hobbies",
-    hobbies: ["[EDIT: Hobby 1]", "[EDIT: Hobby 2]", "[EDIT: Hobby 3]"],
-    goalsTitle: "Future goals",
-    goals: [
-      { title: "[EDIT: Goal 1]", text: "[EDIT: what you want to achieve and why.]" },
-      { title: "[EDIT: Goal 2]", text: "[EDIT: what you want to achieve and why.]" },
-      { title: "[EDIT: Goal 3]", text: "[EDIT: what you want to achieve and why.]" }
     ]
   },
 
@@ -274,15 +203,13 @@ window.SITE = {
   contact: {
     text: "Have an idea, a project or a collaboration in mind? Reach out — I'd love to hear from you.",
     whatsapp: {
-      number: "91XXXXXXXXXX",
+      number: "+91 8160519550",
       message: "Hello Rituraj, I found your website and would like to connect."
     },
-    email: "your-email@example.com",
+    email: "ritusingh8aug@gmail.com",
     links: [
-      { name: "Instagram", icon: "instagram", url: "https://instagram.com/YOUR_USERNAME",         handle: "@YOUR_USERNAME" },
-      { name: "LinkedIn",  icon: "linkedin",  url: "https://linkedin.com/in/YOUR_USERNAME",       handle: "Rituraj Singh" },
-      { name: "Facebook",  icon: "facebook",  url: "https://facebook.com/YOUR_USERNAME",          handle: "Rituraj Singh" },
-      { name: "YouTube",   icon: "youtube",   url: "https://youtube.com/@YOUR_CHANNEL",           handle: "@YOUR_CHANNEL" }
+      { name: "Instagram", icon: "instagram", url: "https://www.instagram.com/rituraj._.singhhh?utm_source=ig_web_button_share_sheet&knvt=ZDNlZDc0MzIxNw==",         handle: "@YOUR_USERNAME" },
+   
       // Add more like this (don't forget the comma on the line above):
       // { name: "X (Twitter)", icon: "twitter", url: "https://x.com/YOUR_USERNAME", handle: "@YOUR_USERNAME" }
     ]
