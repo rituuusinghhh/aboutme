@@ -383,3 +383,7 @@ a.venture:hover { transform: translateY(-4px); background: var(--glass-hover); }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .marquee__track { animation: none; }
 }
+
+/* skill tags */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.tags li { padding: 5px 12px; border-radius: 999px; font-size: .8rem; line-height: 1.4; border: 1px solid var(--line); background: color-mix(in srgb, var(--accent) 8%, transparent); color: var(--text); }
