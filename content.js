@@ -207,7 +207,9 @@ window.SITE = {
     { src: "assets/images/gallery/event-day.jpg.jpeg",   caption: "Event day",    category: "Portraits" },
     { src: "assets/images/gallery/lake-view.jpg.jpeg",   caption: "Lake view",    category: "Moments" },
     { src: "assets/images/gallery/juhu-beach.jpg.jpeg",  caption: "Juhu beach",   category: "Moments" },
-    { src: "assets/images/gallery/garba-event.jpg.jpeg", caption: "Garba event",  category: "Moments" }
+    { src: "assets/images/gallery/garba-event.jpg.jpeg", caption: "Garba event",  category: "Moments" },
+    { src: "assets/images/gallery/portrait-1.jpg", caption: "Casual look",      category: "Portraits" },
+    { src: "assets/images/gallery/portrait-2.jpg", caption: "Traditional look", category: "Portraits" }
   ],
 
   /* ------------------------------------------------------------------
