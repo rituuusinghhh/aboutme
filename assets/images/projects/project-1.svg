@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111a33"/><stop offset="1" stop-color="#4f8cff"/></linearGradient></defs>
+<rect width="800" height="600" fill="url(#g)"/>
+<circle cx="463" cy="573" r="209" fill="#fff" fill-opacity="0.12"/><circle cx="520" cy="194" r="137" fill="#fff" fill-opacity="0.12"/><circle cx="644" cy="190" r="114" fill="#fff" fill-opacity="0.12"/><circle cx="310" cy="145" r="113" fill="#fff" fill-opacity="0.05"/><circle cx="609" cy="405" r="205" fill="#fff" fill-opacity="0.07"/><line x1="638" y1="0" x2="278" y2="600" stroke="#d4af6a" stroke-opacity=".28" stroke-width="2"/><line x1="15" y1="0" x2="-345" y2="600" stroke="#d4af6a" stroke-opacity=".28" stroke-width="2"/><line x1="541" y1="0" x2="181" y2="600" stroke="#d4af6a" stroke-opacity=".28" stroke-width="2"/>
+<text x="48" y="558" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="2" fill="#ffffff" fill-opacity=".6">SAMPLE PROJECT IMAGE 1</text>
+</svg>
